@@ -2,13 +2,13 @@ import json, os, argparse
 
 def load_data(path):
     if not os.path.exists(path):
-        return {"students": []}
+        return {"estudiantes": []}
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def report(data):
     out = ["REPORTE · Promedios", "-"*22]
-    for s in data.get("students", []):
+    for s in data.get("estudisntes", []):
         g = s.get("grades", [])
         avg = sum(g)/len(g) if g else 0.0
         out.append(f"{s['name']}: {avg:.2f}")
