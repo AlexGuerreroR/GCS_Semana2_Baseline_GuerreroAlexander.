@@ -7,6 +7,7 @@
 - REQ-004: Generar reporte con promedio por estudiante.
 - REQ-005: Exportar reporte por pantalla.
 - REQ-006: Guardar información localmente en JSON.
+- REQ-007: El sistema debe permitir eliminar un estudiante registrado.
 
 ## Requisitos no funcionales
 - RNF-001: Mensajes claros y ayuda (--help).
